@@ -1,0 +1,24 @@
+{
+  "name": "week5-farah-shatha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G13/Week5-Farah-Shatha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G13/Week5-Farah-Shatha/issues"
+  },
+  "homepage": "https://github.com/GSG-G13/Week5-Farah-Shatha#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fetch": "^1.1.0"
+  }
+}
