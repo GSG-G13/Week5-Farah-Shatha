@@ -8,16 +8,6 @@ app.get('/', (req, res) => {
   res.sendFile(filePath);
 });
 
-app.get('/styles.css', (req, res) => {
-  let filePath = path.join(__dirname, '..','public', 'styles.css');
-  res.sendFile(filePath);
-});
-
-app.get('/app.js', (req, res) => {
-  let filePath = path.join(__dirname, '..','public', 'app.js');
-  res.sendFile(filePath);
-});
-
 app.get('/countries/:value', (req, res) => {
   let value = req.params.value.toLowerCase();
   let filteredCountries = countriesJson.filter((country) =>
