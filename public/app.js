@@ -3,6 +3,7 @@ const searchSuggestions = document.querySelector("header .search-options");
 const searchResults = document.querySelector(".search-results");
 const gallery = document.getElementById("image-gallery");
 searchInput.addEventListener("input", handleInput);
+require('dotenv').config();
 
 function handleInput() {
   const value = searchInput.value.trim();
@@ -71,7 +72,7 @@ function displaySearchResults(results) {
     const imageGallery = document.querySelector('#image-gallery');
     fetch(`https://api.unsplash.com/search/photos?query=${query}&per_page=6`, {
       headers: {
-        Authorization: 'Client-ID 6aLc2g_FnKCMK7lDo6WWCQmBiSfXRsXMycs2SHwr0o0'
+        Authorization: `Client-ID ${process.env.API_KEY}`
       }
     })
       .then(response => response.json())
