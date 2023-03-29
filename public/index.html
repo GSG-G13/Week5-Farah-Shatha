@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Country Info</title>
+	<script src="https://kit.fontawesome.com/9a8ddb3d78.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1 class="logo"><i class="fa-solid fa-plane">  Discover  Your  Next  Adventure</i></h1>
+		<div class="search-input">
+			<input type="text" class="search-input" placeholder="search for country ...">
+			<div class="search-options"></div>
+			<h2 id="arabic"> 🌲 سافر أنت لست شجرة</h2>
+		</div>
+		  <!--this code is for animated typing -->
+		  <span id="element"></span>
+		  <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+		  <script>
+			var typed = new Typed('#arabic', {
+			  strings: ['🌲 سافر أنت لست شجرة', '🌲 سافر أنت لست شجرة', '🌲 سافر أنت لست شجرة'],
+			  typeSpeed: 200,
+			});
+		  </script>
+		</body>
+	</header>
+	<nav>
+		<div class="search-results">
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="">
+				</div>
+				<div class="flip-card-back">
+					<h1 class="capital">Capital: <span></span></h1>
+					<p class="population">Population: <span></span></p>
+					<p class="currency">Currency: <span></span></p>
+				</div>
+			</div>
+		</div>
+	</nav>
+		<div id="image-gallery">
+		</div>
+
+	</div>
+  <script src="app.js"></script>
+</body>
+</html>
