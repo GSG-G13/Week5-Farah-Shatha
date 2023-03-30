@@ -7,8 +7,22 @@ searchInput.addEventListener("input", handleInput);
 
 function handleInput() {
   const value = searchInput.value.trim();
+  if (typeof value !== "string") {
+    console.log('error: value is not a string');
+    const errorElement = document.createElement("div");
+    errorElement.classList.add("error");
+    errorElement.textContent = "Input must be a string";
+    searchInput.parentElement.appendChild(errorElement);
+    return;
+  }
+  const existingError = searchInput.parentElement.querySelector(".error");
+  if (existingError) {
+    existingError.remove();
+  }
   getSearchSuggestions(value);
 }
+
+
 
 function fetchData(url) {
   return fetch(url).then((response) => response.json());
