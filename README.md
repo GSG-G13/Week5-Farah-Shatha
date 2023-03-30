@@ -1,4 +1,4 @@
-### Project Title
+### Week 5 Express project
 
 ###### This project is a web application that allows users to search for countries and displays information about the selected country, including its flag, capital, currency, and population. Additionally, the application displays a gallery of images related to the selected country.
 
