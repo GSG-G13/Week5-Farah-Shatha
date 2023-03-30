@@ -4,14 +4,14 @@ const searchResults = document.querySelector(".search-results");
 const gallery = document.getElementById("image-gallery");
 searchInput.addEventListener("input", handleInput);
 
-
 function handleInput() {
   const value = searchInput.value.trim();
-  if (typeof value !== "string") {
-    console.log('error: value is not a string');
+  const inputRegex = /^[a-zA-Z]+$/;
+  if (!inputRegex.test(value)) {
+    console.log('error: value is not a valid input');
     const errorElement = document.createElement("div");
     errorElement.classList.add("error");
-    errorElement.textContent = "Input must be a string";
+    errorElement.textContent = "Input must contain only alphabets";
     searchInput.parentElement.appendChild(errorElement);
     return;
   }
@@ -21,7 +21,6 @@ function handleInput() {
   }
   getSearchSuggestions(value);
 }
-
 
 
 function fetchData(url) {
