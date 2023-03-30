@@ -29,16 +29,4 @@
 ### Developers:
 ###### Farah Alhalimi
 ###### Shathaa Khalafallh 
-# Technologies Used
 
-<p align="center">
-  <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" width="50" height="50"/>
-  <img src="https://img.icons8.com/color/48/000000/css3.png" width="50" height="50"/>
-    <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" width="50" height="50"/>
-    <!--Express -->
-    <img src="https://img.icons8.com/color/48/000000/nodejs.png" width="50" height="50"/>
-    <!-- npm -->
-    <img src="https://img.icons8.com/color/48/000000/npm.png" width="50" height="50"/>
-   
-    
-</p>
